@@ -1,0 +1,120 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.brand-name {
+  font-family: "Playfair Display", serif;
+  color: var(--burgundy);
+}
+
+.nav-center {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-center a {
+  text-decoration: none;
+  color: var(--burgundy);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-center a:hover {
+  color: var(--gold);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.icon-btn {
+  font-size: 1.1rem;
+  color: var(--burgundy);
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.icon-btn:hover {
+  color: var(--gold);
+  transform: scale(1.2);
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.dashboard-container {
+  position: absolute;
+  top: 90px;
+  left: -360px;
+  width: 260px;
+  height: calc(100vh - 60px);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.dashboard-container.show {
+  left: 0;
+}
+@media (max-width: 750px) {
+  .nav-center {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+/* body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--gold);
+}
+
+body.dark-mode .navbar {
+  background-color: #2a0f18;
+  box-shadow: 0 2px 8px rgba(230, 201, 168, 0.15);
+}
+
+body.dark-mode .brand-name {
+  color: var(--gold);
+}
+
+body.dark-mode .nav-center a,
+body.dark-mode .icon-btn {
+  color: var(--gold);
+}
+
+body.dark-mode .nav-center a:hover,
+body.dark-mode .icon-btn:hover {
+  color: var(--burgundy);
+} */

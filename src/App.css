@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+:root {
+  --burgundy: #800020;
+  --gold: #e6c9a8;
+  --white: #fff;
+  /* --dark-bg: #421423c7; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff8f8;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Toastify__toast--success {
+  background-color: var(--burgundy) !important;
+  color: var(--white) !important;
+  font-weight: 500 !important;
+  border-radius: 10px !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Toastify__progress-bar--success {
+  background: var(--white) !important;
 }
-
-.App-link {
-  color: #61dafb;
+.Toastify__toast-icon svg {
+  fill: none !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Toastify__toast--info {
+  background-color: var(--white) !important;
+  color: var(--burgundy) !important;
+  border-radius: 10px !important;
+}
+.Toastify__progress-bar--info {
+  background: var(--burgundy) !important;
+}
+button {
+  background-color: var(--burgundy);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--gold);
+  color: var(--burgundy);
 }
